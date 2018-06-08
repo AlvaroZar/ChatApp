@@ -1,13 +1,16 @@
 package com.android.teaching.chatapp;
 
 public class Bandas {
-    private String username;
-    private String text;
+    private int id;
+    String username;
+    String text;
+
 
     public Bandas(){super();}
 
     public Bandas (String username, String text){
         super();
+        this.id = id;
         this.username = username;
         this.text = text;
     }
@@ -26,5 +29,13 @@ public class Bandas {
 
     public void setText(String text) {
         this.text = text;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
